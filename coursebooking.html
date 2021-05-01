@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursebooking</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <div class="formcontainer">
+        <div class="showcase-3"></div>
+      <div class="form-container">
+            <div class="form-tittle">
+               <h1>Book for your
+                favourite Course
+                Today
+               </h1>
+           </div>
+          <form action="" class="my-form">
+                <div class="group">
+                    <input type="text" name="fullName">
+                    <label>Full Name</label>
+                </div>
+
+                <div class="group">
+                    <input type="text" name="email">
+                    <label for="">Email</label>
+                </div>
+
+                <div class="group">
+                    <input type="phonenumber" name="phoneNumber">
+                    <label for="">Phone Number</label>
+                </div>
+
+                <div class="group">
+                    <select name="selectCourseOfInterest">
+                        <option value="html">Html</option>
+                        <option value="css">Css</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="python">Python</option>
+                   </select>
+                </div>
+
+               <div class="message">
+                <textarea name="message" id="comments" cols="30" rows="10" maxlength="320"></textarea>
+                <label for="">Comment</label>
+                <p class="countdown">
+                    <strong>You have <em id="count"></em> characters remaining</strong>
+                </p>
+               </div>
+                
+               <div class="buttons">
+                 <input type="button" name="button" class="submit" value="submit">
+                 <input type="button" name="button" class="clear" value="clear">
+               </div>
+          </form>
+      </div>
+    </div>
+</body>
+
+<script src="sli.js"></script> 
+</html>

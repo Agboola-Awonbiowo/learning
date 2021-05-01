@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/*
+body{
+    height:100vh;
+}
+*/
+.showcase-3{
+    background-image: url('../img1/course-booking.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    height: 350px;
+}
+
+.form-container{
+    margin:auto;
+    width:85%;
+    margin-top:30px;
+}
+
+.group { 
+	position: relative; 
+	margin-bottom: 45px; 
+}
+
+.countdown{
+    display:block;
+}
+
+.message{
+    position: relative;
+    margin-bottom:10px;
+    color:#22324b;
+}
+
+input:focus { outline: none; }
+
+/* Label */
+
+label {
+	color: #999; 
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 15px;
+	top: 10px;
+    transition: all 0.2s ease;
+    background-color:#fff;
+    z-index:1;
+}
+
+/* active */
+
+input:focus ~ label, input.used ~ label {
+	top: -12px;
+    transform: scale(.75); left: 10px;
+	/*font-size: 14px;*/ 
+	color: #4a89dc;
+}
+
+textarea:focus ~ label, textarea.used ~ label {
+    top: -12px;
+    transform: scale(.75); left: 10px;
+    /*font-size: 14px;*/ 
+    color: #4a89dc;
+}
+
+.form-tittle{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.my-form input[type="text"], .my-form input[type="phonenumber"], .my-form select{
+    padding:5px;
+    height:25px;
+    width:100%;
+}
+
+.my-form textarea{
+    width:100%;
+    padding-top:5px;
+}
+
+input[type="submit"], input[type="button"]{
+    width:100%;
+    padding:5px;
+    height:30px;
+    border:1px #4a89dc solid;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.submit:hover{
+    background-color: #d21128;
+    transition: .5s;
+}
+
+.clear:hover{
+    background-color: #d21128;
+    transition: .5s;
+}
+
+.buttons{
+    display: flex;
+    justify-content:center;
+}
+
+.my-form{
+    padding-bottom:20px;
+}
+
+
+
+/* MEDIA QUERIES FOR TAB */
+
+@media only screen and (min-width: 768px){
+    .my-form input[type="text"], .my-form input[type="phonenumber"], .my-form textarea, .my-form select{
+        width:70%;
+        margin-left:80px;
+    }
+
+    input[type="submit"], input[type="button"]{
+        width:32%;
+        margin-right:20px;
+    }
+
+    .countdown{
+        padding-left:5em;
+        padding-top:5px;
+    }
+
+    label{ 
+    left: 90px;
+    top: 10px;
+    }
+
+    input:focus ~ label, input.used ~ label {
+        transform: scale(.75); left: 90px;
+       /*font-size: 14px;*/ 
+    }
+
+    textarea:focus ~ label, textarea.used ~ label {
+       transform: scale(.75); left: 90px;
+       /*font-size: 14px;*/ 
+    }
+
+    .my-form textarea{
+        padding:10px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .form-container{
+        display:grid;
+        grid-template-columns:repeat(12, auto);
+        grid-template-rows:auto auto auto;
+        grid-template-areas:
+        "t f f f f f f f f f f f";
+    }
+
+    .form-tittle{
+        grid-area:t;
+        padding-top:100px;
+        border-right:1px #d21128 solid;
+        width:300px;
+        color:#22324b;
+    }
+
+    .my-form{
+        grid-area:f;
+        display: block;
+        width:100%;
+    }
+
+    .form-container{
+       width:100%;  
+    }
+
+    input[type="submit"], input[type="button"]{
+        width:30%;
+        margin-right:none;
+    }
+
+    .buttons{
+       width:90%;
+    }
+}

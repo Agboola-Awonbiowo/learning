@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* SERVICE SHOWCASE */
+
+.showcase{
+    background: url('../img1/cater4U.jpg'), #F8E5E5;
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    margin-bottom:30px;
+    min-height:300px;
+    width:100%;
+}
+
+.ourc{
+    padding-top:110px;
+    text-align: center;
+}
+
+.mob{
+    width:95%;
+    margin:auto;
+    overflow: hidden;
+}
+
+
+
+/* INDIVIDUAL */
+.main{
+    margin-bottom:30px;
+}
+
+.main h2 {
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    color:#22324b;
+    
+}
+
+.main h2 span {
+    background:#fff;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.main h2:before {
+    background: #d21128;
+    content: "";
+    display: block;
+    height:1px;
+    position:absolute;
+    top:50%;
+    width:100%;
+}
+
+.b02{
+    padding-bottom:5px;
+    border-bottom:1px #d21128 solid;
+    width:30%;
+    margin-left:35%;
+}
+
+.container p{
+  text-align: center;
+  padding: 0 5px;
+  line-height: 20px;
+  color:#22324b;
+}
+
+h2{
+    margin-bottom:0px;
+}
+
+.desktop1{
+    display: none;
+}
+
+/* MEDIA QUERIES FOR TAB */
+
+@media only screen and (min-width: 768px){
+
+    .mob{
+        width:95%;
+        margin:auto;
+        overflow: hidden;
+    }
+
+    .desktop1{
+        display: none;
+    }
+
+    .ourc{
+        padding:20px;
+        font-size: 2.5rem;
+    }
+
+    .showcase2{
+        min-height:320px;
+    }
+
+    .main h2 {
+       font-size: 30px;
+    }
+
+    .container p{
+        font-size:20px;
+        line-height:30px;
+    }
+
+}
+
+ /* MEDIA QUERIES FOR DESKTOP */
+
+ @media only screen and (min-width: 920px){
+    
+    .mobile{
+        display:none;
+    }
+
+    .desktop1{
+        display:inline;
+    }
+
+
+    /* SERVICE SHOWCASE */
+   .showcase2{
+        background: url("../img1/cater4U.jpg");
+        background-size: cover;
+        background-position:center center;
+        background-repeat: no-repeat;
+        text-align: center;
+        color:#fff;
+        font-size: 2.6rem;
+        padding:50px;
+        margin-bottom:40px;
+        min-height:360px;
+        width:100%; 
+       
+    }
+
+    .cent{
+        margin-left:8%;
+        margin-top:1%;
+        width: 80%;
+        line-height:100px;
+    }
+
+    
+    /* GRID TEMPLATE FOR DESKTOP */
+    .main-container{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(35%, 1fr));
+        grid-template-rows:repeat(2, min-height(200px)) ;
+        grid-gap:30px;
+    }
+
+    .main-container{
+        width:90%;
+        margin:auto;
+        overflow: hidden;
+    }
+    
+    .b02{
+      display:none;
+    }
+    
+    .container p{
+       font-size: 20px;
+
+    }
+
+    .main{
+    
+        padding:20px;
+        margin-bottom:10px;
+    }
+
+
+}

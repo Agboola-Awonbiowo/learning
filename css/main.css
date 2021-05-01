@@ -1,0 +1,41 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    height: 100%; 
+}
+
+.area{
+    min-height: calc(100vh - 80px - 127px);
+    overflow: hidden;
+}
+
+h1,
+h3,
+h4,
+p,
+.serv1,
+.serv2,
+.btn,
+.tool,
+.sub,
+.number,
+.sub-desk,
+.join{
+    font-family: 'Roboto', sans-serif;
+    color:#22324b;
+}
+
+.main-footer,
+.tool-desk,
+.foot-cont,
+.icon-2,
+.icon-1{
+    color:#22324b;
+}
+

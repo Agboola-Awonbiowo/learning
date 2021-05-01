@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.c-container{
+    padding:10px;
+    text-align: center;
+    font-size: 2em;
+    color:#000;
+}
+
+.c-container > div{
+    margin-bottom:10px;
+}
+
+.c-container > div:nth-child(1){
+    border:1px #c39ea0 solid;
+}
+
+.c-container > div:nth-child(2){
+    border:1px #c39ea0 solid;
+}
+
+.c-container > div:nth-child(3){ 
+    border:1px #c39ea0 solid;
+}
+
+.c-container > div:nth-child(4){
+    border:1px #c39ea0 solid;
+}
+
+.c-container > div:nth-child(5){
+    border:1px #c39ea0 solid;
+}
+
+.c-container > div:nth-child(6){
+    border:1px #c39ea0 solid;
+}
+

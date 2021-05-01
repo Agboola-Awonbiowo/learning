@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.content1{
+    background-image: url('../img1/TechnicallySound.jpg');
+    margin-top:5px;
+}
+
+.content2{
+    background-image: url('../img1/valueformoney.jpg');
+    
+}
+
+.content3{
+    background-image: url('../img1/whyUs-GlobalExperience.jpg');
+}
+
+.content4{
+    background-image: url('../img1/WhyUs-HelpingHand.jpg');
+}
+
+.content5{
+    background-image: url('../img1/WhyUs-s.jpg');
+}
+
+.content1,
+.content2,
+.content3,
+.content4,
+.content5{
+    height:300px;
+    margin-left:5px;
+    margin-right:5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    margin-bottom:5px;
+}
+
+.comment h1{
+    text-align: center;
+    padding-top:50px;
+    color:#22324b;
+}
+
+.content {
+    opacity: 0;
+    transition: all 2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: translateY(100px);
+}
+  
+.animate {
+    /*background-color:black!important;*/
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+@media only screen and (min-width: 768px){
+    .comment h1{
+        padding-top:60px;
+        font-size: 3em;
+        line-height: 50px;
+    } 
+
+    .content {
+        opacity: 0;
+        transition: all 2s;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transform: translateY(100px);
+    }
+      
+    .animate {
+        /*background-color:black!important;*/
+        opacity: 1;
+        transform: translateY(0px);
+    }
+   
+}
+
+
+@media only screen and (min-width: 920px){
+    .whyus-container1{
+        display:flex;
+    }
+    
+    .empty{
+        width:20%;
+    }
+
+    .content1,
+    .content2,
+    .content3,
+    .content4,
+    .content5{
+        display:flex;
+        width:80%;
+        margin-left:0px;
+        margin-right:0px;
+    }
+
+
+    .comment{
+        width:35%;
+        background-color:#d21128  ;
+        opacity: 0.7;
+    }
+
+    .comment h1{
+        padding-top:20px;
+        font-size: 2.5em;
+        line-height: 40px;
+        height: 250px;
+    }
+
+    .main-image{
+        width:65%;
+    }
+
+
+    .content {
+        opacity: 0;
+        transition: all 2s;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transform: translateY(100px);
+    }
+      
+    .animate {
+        /*background-color:black!important;*/
+        opacity: 1;
+        transform: translateY(0px);
+    }
+   
+}
